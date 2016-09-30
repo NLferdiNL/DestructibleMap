@@ -32,7 +32,7 @@ public class GroundController : MonoBehaviour {
 	}
 
 	public void DestroyGround( PolygonCollider2D cc, Transform bulletTf ){
-		/*V2int c = World2Pixel(cc.bounds.center.x, cc.bounds.center.y);
+		V2int c = World2Pixel(cc.bounds.center.x, cc.bounds.center.y);
 		int r = Mathf.RoundToInt(cc.bounds.size.x*widthPixel/widthWorld);
 
 		int x, y, px, nx, py, ny, d;
@@ -53,7 +53,7 @@ public class GroundController : MonoBehaviour {
    				sr.sprite.texture.SetPixel(px, ny, transp);
 				sr.sprite.texture.SetPixel(nx, ny, transp);
 			}
-		}*/
+		}/*
 
         int explosionSize = 50;
 
@@ -67,7 +67,7 @@ public class GroundController : MonoBehaviour {
 
         V2int localPos = World2Pixel(bulletTf.position.x - (bulletTf.lossyScale.x / 2), bulletTf.position.y - (bulletTf.lossyScale.y / 2));
 
-        sr.sprite.texture.SetPixels(localPos.x, localPos.y, explosionSize, explosionSize, explosionColor);
+        sr.sprite.texture.SetPixels(localPos.x, localPos.y, explosionSize, explosionSize, explosionColor);*/
 
 		sr.sprite.texture.Apply();
 		Destroy(GetComponent<PolygonCollider2D>());
